@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        h1, h2 {
+            font-weight: 600;
+            color: #35424a;
+        }
+
+        /* Header Styles */
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #f0f0f0;
+        }
+
+        /* Main Section Styles */
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .container {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .container p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .container a {
+            text-decoration: none;
+            padding: 12px 20px;
+            background-color: #35424a;
+            color: white;
+            font-weight: 600;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container a:hover {
+            background-color: #45a049;
+        }
+
+        .container img {
+            width: 100%; /* Make image fill the container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #35424a;
+            color: #ffffff;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #45a049;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            main {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+
+            .container h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Quiz Website</h1>
+        <p>Welcome to QuizTime</p>
+        <p>Test your knowledge</p>
+    </header>
+
+    <main>
+        <div class="container" id="maths">
+            <h2>Maths Quiz</h2>
+            <p>Challenge your math skills with exciting quizzes!</p>
+            <a href="index.html" img src="maths.jpeg" alt="maths quiz">
+                Start Quiz</a>
+        </div>
+
+        <div class="container" id="physics">
+            <h2>Physics Quiz</h2>
+            <p>Test your understanding of physics concepts!</p>
+            <a href="#">
+             <img src="physics.jpeg" alt="physics quiz">   
+                Start Quiz</a>
+        </div>
+
+        <div class="container" id="python">
+            <h2>Python Quiz</h2>
+            <p>Assess your Python programming skills!</p>
+            <a href="#">
+                <img src="python.jpeg" alt="Python Quiz Image">
+                Start Quiz
+            </a>
+        </div>
+
+        <div class="container" id="ethical-hacking">
+            <h2>Ethical Hacking Quiz</h2>
+            <p>Evaluate your knowledge of ethical hacking!</p>
+            <a href="#">
+               <img src="ethicalhack.jpeg" alt="ethical hacking quiz">
+                Start Quiz</a>
+        </div>
+
+        <div class="container" id="networking">
+            <h2>Networking Quiz</h2>
+            <p>Test your networking knowledge!</p>
+            <a href="#">Start Quiz</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Quiz Website | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p>
+            Follow us on:
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
